@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiSitio</title>
+  <!-- Sin JavaScript, se redirige al español -->
+  <meta http-equiv="refresh" content="0; url=es/">
+  <script>
+    // Elige el idioma según el navegador: inglés si empieza por "en", español en el resto
+    var idioma = (navigator.language || 'es').toLowerCase();
+    location.replace(idioma.indexOf('en') === 0 ? 'en/' : 'es/');
+  </script>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>MiSitio</h1>
+    <ul class="relacionadas">
+      <li><a href="es/" hreflang="es">Español</a></li>
+      <li><a href="en/" hreflang="en">English</a></li>
+    </ul>
+  </main>
+</body>
+</html>
