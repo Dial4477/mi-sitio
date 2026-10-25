@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contador de palabras y caracteres online | MiSitio</title>
+  <meta name="description" content="Cuenta las palabras, caracteres, frases y párrafos de tu texto al instante. Gratis, sin registro y sin enviar tu texto a ningún servidor.">
+  <!-- Cuando tengamos dominio: añadiremos aquí canonical y hreflang -->
+  <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="logo" href="../index.html">MiSitio</a>
+    <nav><a href="../index.html">Herramientas</a></nav>
+  </div>
+</header>
+
+<main class="contenedor">
+  <h1>Contador de palabras y caracteres</h1>
+  <p class="intro">Pega o escribe tu texto y verás los resultados al momento.</p>
+
+  <section class="herramienta" aria-label="Contador de palabras">
+    <label for="texto" class="intro" style="display:block;margin-bottom:8px">Tu texto</label>
+    <textarea id="texto" placeholder="Escribe o pega tu texto aquí…"></textarea>
+    <div class="botones">
+      <button type="button" id="btn-borrar">Borrar texto</button>
+    </div>
+
+    <dl class="resultados" aria-live="polite">
+      <div><dt>Palabras</dt><dd id="r-palabras">0</dd></div>
+      <div><dt>Caracteres</dt><dd id="r-caracteres">0</dd></div>
+      <div><dt>Sin espacios</dt><dd id="r-sin-espacios">0</dd></div>
+      <div><dt>Frases</dt><dd id="r-frases">0</dd></div>
+      <div><dt>Párrafos</dt><dd id="r-parrafos">0</dd></div>
+      <div><dt>Tiempo de lectura</dt><dd id="r-lectura">0 s</dd></div>
+    </dl>
+  </section>
+
+  <!-- Aquí irá el anuncio cuando activemos AdSense -->
+
+  <article class="texto">
+    <h2>Cómo usar el contador de palabras</h2>
+    <p>Escribe directamente en el cuadro o pega un texto copiado de un documento, un correo o una página web. El recuento se actualiza mientras escribes, sin pulsar ningún botón.</p>
+    <p>Tu texto no sale de tu navegador: todo el cálculo se hace en tu propio dispositivo, así que puedes usarlo con contenido privado.</p>
+
+    <h2>Qué cuenta esta herramienta</h2>
+    <ul>
+      <li><strong>Palabras:</strong> grupos de caracteres separados por espacios o saltos de línea.</li>
+      <li><strong>Caracteres:</strong> todas las letras, números, signos y espacios.</li>
+      <li><strong>Sin espacios:</strong> los caracteres sin contar espacios ni saltos de línea.</li>
+      <li><strong>Frases:</strong> fragmentos que terminan en punto, exclamación o interrogación.</li>
+      <li><strong>Párrafos:</strong> bloques de texto separados por una línea en blanco.</li>
+      <li><strong>Tiempo de lectura:</strong> estimado a unas 200 palabras por minuto.</li>
+    </ul>
+
+    <h2>Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Cuántas palabras tiene una página?</summary>
+      <p>Depende del tamaño de letra y de los márgenes, pero una página de texto a un espacio suele tener entre 400 y 500 palabras, y a doble espacio entre 250 y 300.</p>
+    </details>
+    <details>
+      <summary>¿Cuenta los espacios como caracteres?</summary>
+      <p>El resultado "Caracteres" sí los cuenta. Si necesitas el número sin ellos, mira "Sin espacios".</p>
+    </details>
+    <details>
+      <summary>¿Se guarda mi texto?</summary>
+      <p>No. El texto no se envía ni se almacena en ningún servidor; se procesa solo en tu navegador.</p>
+    </details>
+
+    <h2>Otras herramientas</h2>
+    <ul class="relacionadas">
+      <li><a href="#">Calculadora de porcentajes</a></li>
+      <li><a href="#">Generador de contraseñas</a></li>
+    </ul>
+  </article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <a href="../legal/aviso-legal.html">Aviso legal</a>
+    <a href="../legal/privacidad.html">Privacidad</a>
+    <a href="../legal/cookies.html">Cookies</a>
+  </div>
+</footer>
+
+<script src="../../js/herramientas/contador-palabras.js"></script>
+</body>
+</html>

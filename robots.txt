@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Cambia TUDOMINIO.com por tu dominio real cuando lo tengas
+Sitemap: https://TUDOMINIO.com/sitemap.xml
