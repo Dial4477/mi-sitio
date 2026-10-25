@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de porcentajes online | MiSitio</title>
+  <meta name="description" content="Calcula el porcentaje de una cantidad, qué porcentaje representa un número de otro y la variación porcentual entre dos valores. Gratis y al instante.">
+  <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="logo" href="../index.html">MiSitio</a>
+    <nav>
+      <a href="../index.html">Herramientas</a>
+      <a href="../../en/tools/percentage-calculator.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main class="contenedor">
+  <h1>Calculadora de porcentajes</h1>
+  <p class="intro">Elige el cálculo que necesitas, escribe los números y el resultado aparece al instante.</p>
+
+  <section class="herramienta" aria-label="Calculadora de porcentajes">
+
+    <div class="calc">
+      <h2>¿Cuánto es el X % de una cantidad?</h2>
+      <p class="frase">
+        El <input type="text" id="a1" inputmode="decimal" aria-label="Porcentaje" placeholder="20"> % de
+        <input type="text" id="b1" inputmode="decimal" aria-label="Cantidad" placeholder="150"> es:
+      </p>
+      <p class="res" id="res1" aria-live="polite"></p>
+    </div>
+
+    <div class="calc">
+      <h2>¿Qué porcentaje es un número de otro?</h2>
+      <p class="frase">
+        <input type="text" id="a2" inputmode="decimal" aria-label="Número" placeholder="30"> es qué porcentaje de
+        <input type="text" id="b2" inputmode="decimal" aria-label="Total" placeholder="120">:
+      </p>
+      <p class="res" id="res2" aria-live="polite" data-cero="No se puede dividir entre 0"></p>
+    </div>
+
+    <div class="calc">
+      <h2>Variación porcentual entre dos valores</h2>
+      <p class="frase">
+        De <input type="text" id="a3" inputmode="decimal" aria-label="Valor inicial" placeholder="80"> a
+        <input type="text" id="b3" inputmode="decimal" aria-label="Valor final" placeholder="100">:
+      </p>
+      <p class="res" id="res3" aria-live="polite"
+         data-cero="El valor inicial no puede ser 0"
+         data-sube="aumento" data-baja="disminución" data-igual="sin cambios"></p>
+    </div>
+
+  </section>
+
+  <!-- Aquí irá el anuncio cuando activemos AdSense -->
+
+  <article class="texto">
+    <h2>Cómo se calcula un porcentaje</h2>
+    <p>Un porcentaje es una parte de cada cien. Según lo que quieras averiguar, hay tres cálculos habituales, y la calculadora de arriba resuelve los tres.</p>
+    <ul>
+      <li><strong>El X % de una cantidad:</strong> multiplica la cantidad por el porcentaje y divide entre 100. Ejemplo: el 20 % de 150 es 150 × 20 ÷ 100 = 30.</li>
+      <li><strong>Qué porcentaje es un número de otro:</strong> divide el número entre el total y multiplica por 100. Ejemplo: 30 de 120 es 30 ÷ 120 × 100 = 25 %.</li>
+      <li><strong>Variación porcentual:</strong> resta el valor inicial al final, divide entre el inicial y multiplica por 100. Ejemplo: de 80 a 100 es (100 − 80) ÷ 80 × 100 = +25 %.</li>
+    </ul>
+
+    <h2>Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Cómo calculo un precio con descuento?</summary>
+      <p>Calcula el porcentaje del descuento sobre el precio y réstalo. Por ejemplo, con un artículo de 50 € y un 20 % de descuento: el 20 % de 50 es 10, así que el precio final es 40 €.</p>
+    </details>
+    <details>
+      <summary>¿Cómo añado un porcentaje a una cantidad?</summary>
+      <p>Calcula el porcentaje de la cantidad y súmalo. Por ejemplo, para sumar un 21 % a 100: el 21 % de 100 es 21, así que el total es 121.</p>
+    </details>
+    <details>
+      <summary>Si algo sube un 50 % y luego baja un 50 %, ¿vuelve al valor inicial?</summary>
+      <p>No. Si partes de 100 y sube un 50 % llegas a 150, pero un 50 % de bajada sobre 150 te deja en 75. Cada porcentaje se calcula sobre el valor del momento, no sobre el original.</p>
+    </details>
+    <details>
+      <summary>¿Qué significa que la variación sea negativa?</summary>
+      <p>Que el valor final es menor que el inicial. Una variación de −25 % indica que ha disminuido una cuarta parte.</p>
+    </details>
+
+    <h2>Otras herramientas</h2>
+    <ul class="relacionadas">
+      <li><a href="contador-palabras.html">Contador de palabras</a></li>
+    </ul>
+  </article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <a href="../legal/aviso-legal.html">Aviso legal</a>
+    <a href="../legal/privacidad.html">Privacidad</a>
+    <a href="../legal/cookies.html">Cookies</a>
+  </div>
+</footer>
+
+<script src="../../js/herramientas/calculadora-porcentajes.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word Counter and Character Counter Online | MiSitio</title>
+  <meta name="description" content="Count the words, characters, sentences and paragraphs in your text instantly. Free, no sign-up, and your text never leaves your browser.">
+  <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="logo" href="../index.html">MiSitio</a>
+    <nav>
+      <a href="../index.html">Tools</a>
+      <a href="../../es/herramientas/contador-palabras.html" hreflang="es" lang="es">Español</a>
+    </nav>
+  </div>
+</header>
+
+<main class="contenedor">
+  <h1>Word Counter and Character Counter</h1>
+  <p class="intro">Paste or type your text and see the results instantly.</p>
+
+  <section class="herramienta" aria-label="Word counter">
+    <label for="texto" class="intro" style="display:block;margin-bottom:8px">Your text</label>
+    <textarea id="texto" placeholder="Type or paste your text here…"></textarea>
+    <div class="botones">
+      <button type="button" id="btn-borrar">Clear text</button>
+    </div>
+
+    <dl class="resultados" aria-live="polite">
+      <div><dt>Words</dt><dd id="r-palabras">0</dd></div>
+      <div><dt>Characters</dt><dd id="r-caracteres">0</dd></div>
+      <div><dt>No spaces</dt><dd id="r-sin-espacios">0</dd></div>
+      <div><dt>Sentences</dt><dd id="r-frases">0</dd></div>
+      <div><dt>Paragraphs</dt><dd id="r-parrafos">0</dd></div>
+      <div><dt>Reading time</dt><dd id="r-lectura">0 s</dd></div>
+    </dl>
+  </section>
+
+  <!-- Ad slot goes here when AdSense is enabled -->
+
+  <article class="texto">
+    <h2>How to use the word counter</h2>
+    <p>Type directly into the box or paste text copied from a document, an email or a web page. The count updates as you type, with no button to press.</p>
+    <p>Your text never leaves your browser: all the counting happens on your own device, so you can use it with private content.</p>
+
+    <h2>What this tool counts</h2>
+    <ul>
+      <li><strong>Words:</strong> groups of characters separated by spaces or line breaks.</li>
+      <li><strong>Characters:</strong> every letter, number, symbol and space.</li>
+      <li><strong>No spaces:</strong> characters excluding spaces and line breaks.</li>
+      <li><strong>Sentences:</strong> fragments ending in a period, exclamation mark or question mark.</li>
+      <li><strong>Paragraphs:</strong> blocks of text separated by a blank line.</li>
+      <li><strong>Reading time:</strong> estimated at about 200 words per minute.</li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <details>
+      <summary>How many words are on a page?</summary>
+      <p>It depends on font size and margins, but a single-spaced page usually holds 400 to 500 words, and a double-spaced page 250 to 300.</p>
+    </details>
+    <details>
+      <summary>Are spaces counted as characters?</summary>
+      <p>The "Characters" result includes them. If you need the number without spaces, check "No spaces".</p>
+    </details>
+    <details>
+      <summary>Is my text saved?</summary>
+      <p>No. Your text is not sent to or stored on any server; it is processed only in your browser.</p>
+    </details>
+
+    <h2>More tools</h2>
+    <ul class="relacionadas">
+      <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+    </ul>
+  </article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <a href="../legal/legal-notice.html">Legal notice</a>
+    <a href="../legal/privacy.html">Privacy</a>
+    <a href="../legal/cookies.html">Cookies</a>
+  </div>
+</footer>
+
+<script src="../../js/herramientas/contador-palabras.js"></script>
+</body>
+</html>

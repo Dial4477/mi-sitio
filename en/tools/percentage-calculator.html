@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Percentage Calculator Online | MiSitio</title>
+  <meta name="description" content="Find a percentage of a number, what percent one number is of another, and the percentage change between two values. Free and instant.">
+  <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="logo" href="../index.html">MiSitio</a>
+    <nav>
+      <a href="../index.html">Tools</a>
+      <a href="../../es/herramientas/calculadora-porcentajes.html" hreflang="es" lang="es">Español</a>
+    </nav>
+  </div>
+</header>
+
+<main class="contenedor">
+  <h1>Percentage Calculator</h1>
+  <p class="intro">Pick the calculation you need, type in your numbers and the result appears instantly.</p>
+
+  <section class="herramienta" aria-label="Percentage calculator">
+
+    <div class="calc">
+      <h2>What is X% of a number?</h2>
+      <p class="frase">
+        What is <input type="text" id="a1" inputmode="decimal" aria-label="Percentage" placeholder="20">% of
+        <input type="text" id="b1" inputmode="decimal" aria-label="Number" placeholder="150">?
+      </p>
+      <p class="res" id="res1" aria-live="polite"></p>
+    </div>
+
+    <div class="calc">
+      <h2>What percent is one number of another?</h2>
+      <p class="frase">
+        <input type="text" id="a2" inputmode="decimal" aria-label="Number" placeholder="30"> is what percent of
+        <input type="text" id="b2" inputmode="decimal" aria-label="Total" placeholder="120">?
+      </p>
+      <p class="res" id="res2" aria-live="polite" data-cero="Cannot divide by 0"></p>
+    </div>
+
+    <div class="calc">
+      <h2>Percentage change between two values</h2>
+      <p class="frase">
+        From <input type="text" id="a3" inputmode="decimal" aria-label="Starting value" placeholder="80"> to
+        <input type="text" id="b3" inputmode="decimal" aria-label="Final value" placeholder="100">:
+      </p>
+      <p class="res" id="res3" aria-live="polite"
+         data-cero="The starting value cannot be 0"
+         data-sube="increase" data-baja="decrease" data-igual="no change"></p>
+    </div>
+
+  </section>
+
+  <!-- Ad slot goes here when AdSense is enabled -->
+
+  <article class="texto">
+    <h2>How to calculate a percentage</h2>
+    <p>A percentage is a part out of one hundred. Depending on what you want to find, there are three common calculations, and the calculator above handles all of them.</p>
+    <ul>
+      <li><strong>X% of a number:</strong> multiply the number by the percentage and divide by 100. Example: 20% of 150 is 150 × 20 ÷ 100 = 30.</li>
+      <li><strong>What percent one number is of another:</strong> divide the number by the total and multiply by 100. Example: 30 out of 120 is 30 ÷ 120 × 100 = 25%.</li>
+      <li><strong>Percentage change:</strong> subtract the starting value from the final value, divide by the starting value and multiply by 100. Example: from 80 to 100 is (100 − 80) ÷ 80 × 100 = +25%.</li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <details>
+      <summary>How do I calculate a discounted price?</summary>
+      <p>Work out the discount percentage of the price and subtract it. For example, for a $50 item with 20% off: 20% of 50 is 10, so the final price is $40.</p>
+    </details>
+    <details>
+      <summary>How do I add a percentage to a number?</summary>
+      <p>Work out the percentage of the number and add it. For example, to add 21% to 100: 21% of 100 is 21, so the total is 121.</p>
+    </details>
+    <details>
+      <summary>If something rises 50% and then falls 50%, is it back to the start?</summary>
+      <p>No. Start at 100, rise 50% and you reach 150, but a 50% drop from 150 leaves you at 75. Each percentage is calculated on the current value, not the original.</p>
+    </details>
+    <details>
+      <summary>What does a negative percentage change mean?</summary>
+      <p>The final value is lower than the starting one. A change of −25% means it dropped by a quarter.</p>
+    </details>
+
+    <h2>More tools</h2>
+    <ul class="relacionadas">
+      <li><a href="word-counter.html">Word Counter</a></li>
+    </ul>
+  </article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <a href="../legal/legal-notice.html">Legal notice</a>
+    <a href="../legal/privacy.html">Privacy</a>
+    <a href="../legal/cookies.html">Cookies</a>
+  </div>
+</footer>
+
+<script src="../../js/herramientas/calculadora-porcentajes.js"></script>
+</body>
+</html>

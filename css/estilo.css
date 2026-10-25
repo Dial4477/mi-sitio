@@ -103,3 +103,21 @@ details p { margin: 8px 0 0; }
 .relacionadas a { display: inline-block; padding: 6px 14px; border: 1px solid var(--borde); border-radius: 99px; text-decoration: none; background: var(--superficie); }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* ===== Calculadoras con campos de entrada ===== */
+.calc { padding: 16px 0; border-bottom: 1px solid var(--borde); }
+.calc:first-of-type { padding-top: 0; }
+.calc:last-of-type { border-bottom: 0; padding-bottom: 0; }
+.calc h2 { font-size: 1.05rem; margin: 0 0 10px; }
+.calc .frase { margin: 0 0 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+input[type="text"] {
+  font: inherit;
+  width: 7.5em;
+  padding: 7px 10px;
+  color: var(--texto);
+  background: var(--fondo);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+.res { margin: 0; font-size: 1.5rem; font-weight: 700; min-height: 1.7em; font-variant-numeric: tabular-nums; }
+.res small { font-weight: 400; font-size: 1rem; color: var(--texto-suave); margin-left: 8px; }
